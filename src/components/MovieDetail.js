@@ -5,7 +5,7 @@ import Movie from "./Movie";
 const KEY = "8eca3d304c4f33b2f17497dffd27d5ba";
 const URL = "https://api.themoviedb.org/3/movie/";
 
-function Detail() {
+function MovieDetail() {
   // stast
   const [loading, setLoading] = useState(true);
   const [movie, setMovie] = useState([]);
@@ -41,7 +41,7 @@ function Detail() {
               poster={movie.poster_path}
               title={movie.title}
               overview={movie.overview}
-              vote={`✅${movie.vote_average.toFixed(1)}`}
+              vote={`⭐${movie.vote_average.toFixed(1)}`}
             />
           }
         </div>
@@ -50,4 +50,4 @@ function Detail() {
   );
 }
 
-export default Detail;
+export default MovieDetail;
